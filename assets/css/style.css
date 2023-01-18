@@ -25,7 +25,9 @@ nav li .active {
 /* Hero */
 #hero .container-fluid {
     background-image: url('../image/hero.png');
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
 }
 
@@ -74,8 +76,11 @@ nav li .active {
     }
     
     #hero .cont-text {
-        text-align: center;
         padding: 0 !important;
+    }
+
+    #hero .cont-text .col-lg-6{
+        text-align: center !important;
     }
 
     #hero .img1 {
