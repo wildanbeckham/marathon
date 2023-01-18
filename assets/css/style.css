@@ -1,5 +1,6 @@
 :root {
     --var-primary: #0E892E;
+    --var-second: #2c1e58;
 }
 
 body {
@@ -15,6 +16,10 @@ body {
 /* Navbar */
 nav a i {
     color: var(--var-primary);
+}
+
+nav .nav-link {
+    color: var(--var-second);
 }
 
 nav li .active {
@@ -34,6 +39,7 @@ nav li .active {
 /* Misi */
 #misi {
     background-color: #F5F5F1;
+    color: var(--var-second);
 }
 
 #misi .text-1 {
