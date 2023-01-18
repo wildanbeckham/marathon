@@ -13,6 +13,10 @@ body {
     color: var(--var-primary);
 }
 
+.fw-600 {
+    font-weight: 600 !important;
+}
+
 /* Navbar */
 nav a i {
     color: var(--var-primary);
@@ -38,7 +42,7 @@ nav li .active {
 
 /* Misi */
 #misi {
-    background-color: #F5F5F1;
+    background-color: #fedc00;
     color: var(--var-second);
 }
 
@@ -51,9 +55,21 @@ nav li .active {
 
 #misi .text-2,
 #misi .text-3 {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 400;
     word-spacing: 10px;
+}
+
+/* Benefit */
+#bene img {
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+#bene .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 14px 0px inset;
+    scale: 1.05;
+    transition: 0.3s;
 }
 
 
@@ -85,7 +101,7 @@ nav li .active {
         padding: 0 !important;
     }
 
-    #hero .cont-text .col-lg-6{
+    #hero .cont-text .hero-cont{
         text-align: center !important;
     }
 
