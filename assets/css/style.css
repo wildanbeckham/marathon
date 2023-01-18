@@ -1,0 +1,105 @@
+:root {
+    --var-primary: #0E892E;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+.primary-text {
+    color: var(--var-primary);
+}
+
+/* Navbar */
+nav a i {
+    color: var(--var-primary);
+}
+
+nav li .active {
+    color: var(--var-primary) !important;
+    border-bottom: 4px solid var(--var-primary);
+}
+
+/* Hero */
+#hero .container-fluid {
+    background-image: url('../image/hero.png');
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Misi */
+#misi {
+    background-color: #F5F5F1;
+}
+
+#misi .text-1 {
+    line-height: 1.3;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+#misi .text-2,
+#misi .text-3 {
+    font-size: 20px;
+    font-weight: 400;
+    word-spacing: 10px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .navbar {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    #hero {
+        padding: 0 !important;
+    }
+
+    #hero .container-fluid {
+        background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        /* bottom, image */
+        url('../image/hero.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #hero .cont-text {
+        text-align: center;
+        padding: 0 !important;
+    }
+
+    #hero .img1 {
+        width: 30vh;
+    }
+
+    #hero .img2 {
+        width: 50vh;
+    }
+
+    #misi .colom-2 {
+        margin: 0 !important;
+    }
+
+    #misi .text-1,
+    #misi .text-3 {
+        text-align: center;
+    }
+
+    #misi .text-2 {
+        display: none !important;
+    }
+
+    #misi .text-3 {
+        display: block !important;
+    }
+}
