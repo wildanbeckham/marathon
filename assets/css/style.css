@@ -150,11 +150,6 @@ nav li .active {
 }
 
 @media only screen and (max-width: 1000px) {
-    .navbar {
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-
     nav .btn-nav {
         font-size: 13.5px;
     }
