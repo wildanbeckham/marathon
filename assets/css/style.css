@@ -13,6 +13,10 @@ body {
     color: var(--var-primary);
 }
 
+.second-text {
+    color: var(--var-second)
+}
+
 .fw-600 {
     font-weight: 600 !important;
 }
@@ -30,6 +34,7 @@ nav li .active {
     color: var(--var-primary) !important;
     border-bottom: 4px solid var(--var-primary);
 }
+
 
 /* Hero */
 #hero .container-fluid {
@@ -66,17 +71,49 @@ nav li .active {
     object-fit: contain;
 }
 
+#bene .card {
+    -webkit-transition: 0.3s;
+}
+
 #bene .card:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 14px 0px inset;
     scale: 1.05;
-    transition: 0.3s;
 }
 
+/* Jadwal */
+#jadwal {
+    background-color: #fedc00;
+    color: var(--var-second);
+}
+
+/* Rute */
+#rute .rute-img {
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+#rute .card-img-overlay  {
+    background-image: linear-gradient(transparent, rgb(110,167,120));
+}
+
+#rute .card-rute {
+    -webkit-transition: 0.3s;
+ }
+
+#rute .card-rute:hover {
+   scale: 1.1;
+   -webkit-transition: 0.3s;
+   cursor: pointer;
+}
 
 @media only screen and (max-width: 1000px) {
     .navbar {
         padding: 0 !important;
         margin: 0 !important;
+    }
+
+    nav .btn-nav {
+        font-size: 13.5px;
     }
 
     #hero {
@@ -128,5 +165,10 @@ nav li .active {
 
     #misi .text-3 {
         display: block !important;
+    }
+
+    #bene .cont-bene {
+        display: grid;
+        grid-template-columns: auto auto;
     }
 }
