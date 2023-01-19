@@ -49,6 +49,12 @@ nav li .active {
     height: 100vh;
 }
 
+#hero .text {
+    letter-spacing: -6px;
+    color: #FCDB01;
+    font-size: 800;
+}
+
 /* Misi */
 #misi {
     background-image: url('../image/BG.png');
@@ -159,6 +165,10 @@ nav li .active {
 
     #hero {
         padding: 0 !important;
+    }
+
+    #hero .text {
+        font-size: 70px;
     }
 
     #hero .container-fluid {
