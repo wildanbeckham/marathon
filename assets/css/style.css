@@ -35,6 +35,10 @@ nav li .active {
     border-bottom: 4px solid var(--var-primary);
 }
 
+.nav-1 {
+    width: 200px;
+}
+
 
 /* Hero */
 #hero .container-fluid {
@@ -123,6 +127,22 @@ nav li .active {
     background-repeat: no-repeat;
 }
 
+#hadiah .hadiah-card {
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+}
+
+#hadiah .hadiah-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    scale: 1.1;
+}
+
+/* Footer */
+#footer {
+    background-image: url('../image/bg07.png');
+    background-position: center;
+}
+
 @media only screen and (max-width: 1000px) {
     .navbar {
         padding: 0 !important;
@@ -131,6 +151,10 @@ nav li .active {
 
     nav .btn-nav {
         font-size: 13.5px;
+    }
+
+    .nav-1 {
+        width: 150px !important;
     }
 
     #hero {
