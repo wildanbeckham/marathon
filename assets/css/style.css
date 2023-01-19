@@ -47,7 +47,7 @@ nav li .active {
 
 /* Misi */
 #misi {
-    background-color: #fedc00;
+    background-image: url('../image/BG.png');
     color: var(--var-second);
 }
 
@@ -82,11 +82,15 @@ nav li .active {
 
 /* Jadwal */
 #jadwal {
-    background-color: #fedc00;
+    background-image: url('../image/BG.png');
     color: var(--var-second);
 }
 
 /* Rute */
+#rute {
+    background-image: url('../image/BG.png');
+}
+
 #rute .rute-img {
     aspect-ratio: 3/2;
     object-fit: cover;
@@ -104,6 +108,19 @@ nav li .active {
    scale: 1.1;
    -webkit-transition: 0.3s;
    cursor: pointer;
+}
+
+/* Jersey */
+#jersey {
+    background-image: url('../image/BG.png');
+}
+
+/* Hadiah */
+#hadiah {
+    background-image: url('../image/bg-price.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -170,5 +187,11 @@ nav li .active {
     #bene .cont-bene {
         display: grid;
         grid-template-columns: auto auto;
+    }
+
+    #hadiah {
+        background-size: cover;
+        background-image: url('../image/bg07.png');
+        padding: 0;
     }
 }
