@@ -171,7 +171,6 @@ nav .nav-mid li .active {
   height: 70px;
   object-fit: contain;
   aspect-ratio: 3/2;
-  filter: grayscale(100%)
 }
 
 /* Footer */
