@@ -293,7 +293,7 @@
         <h1 class="fw-600 text-center pb-5 second-text">RUTE LARI</h1>
       </div>
     </div>
-    <div class="row">
+    <div class="row pb-5">
       <div class="col-lg-4 pt-4" data-aos="flip-left"  data-aos-duration="1000">
         <h5 class="fw-600 second-text text-center">21K (HALF MARATHON)</h5>
         <div class="p-4 border-top border-bottom border-2 border-danger border-opacity-50">
@@ -331,8 +331,7 @@
               </div>
             </div>
           </div>
-        </div>
-       
+        </div>  
       </div>
     </div>
   </div>
@@ -484,11 +483,11 @@
 <!-- Logo -->
 <section id="logo" class="py-5">
   <div class="container-fluid py-5">
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-lg-12 pb-3">
-        <h4 class="fw-600 text-center pb-5 second-text">DISELENGGARAKAN OLEH : </h4>
+        <h4 class="fw-600 text-center pb-5 primary-text">DISELENGGARAKAN OLEH : </h4>
       </div>
-      <div class="col d-flex align-items-center">
+      <div class="col-lg-7">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="./assets/image/logo/Mangkunegaran.png" class="img-fluid" alt=""></div>
@@ -496,20 +495,19 @@
             <div class="swiper-slide"><img src="./assets/image/logo/KTD_corporate_FC.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="./assets/image/logo/Pandara Sports.png" class="img-fluid" alt=""></div>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
     </div>
   </div>
-</section>
-<!-- Logo Akhir -->
 
-<section id="logo" class="py-5">
   <div class="container-fluid py-5">
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-lg-12 pb-3">
-        <h5 class="fw-600 text-center pb-5 second-text">DISPONSORI OLEH : </h5>
+        <h5 class="fw-600 text-center pb-5 primary-text">DISPONSORI OLEH : </h5>
       </div>
-      <div class="col d-flex justi">
+      <div class="col-lg-7">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="./assets/image/logo/Crystalline.png" class="img-fluid" alt=""></div>
@@ -521,6 +519,8 @@
     </div>
   </div>
 </section>
+<!-- Logo Akhir -->
+
 
 <!-- Footer -->
 <footer id="footer" class="mt-5">
@@ -592,49 +592,6 @@
   </div>
 </div>
 <!-- Rute 3 Akhir -->
-<!-- Rute 1 -->
-<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content p-0 m-0">
-      <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-center p-0 m-0">
-        <img src="./assets/image/image5.png" class="img-fluid" alt="">
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Rute 1 Akhir -->
-<!-- Rute 2 -->
-<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content p-0 m-0">
-      <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-center p-0 m-0">
-        <img src="./assets/image/image2.png" class="img-fluid" alt="">
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Rute 2 Akhir -->
-<!-- Rute 3 -->
-<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content p-0 m-0">
-      <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-center p-0 m-0">
-        <img src="./assets/image/image6.png" class="img-fluid" alt="">
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Rute 3 Akhir -->
-
 <div class="modal fade" id="hadiah1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered">
     <div class="modal-content p-0 m-0">
@@ -697,7 +654,7 @@
   function myFunction(x) {
   if (x.matches) {
       var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 30,
       pagination: {
         el: ".swiper-pagination",
@@ -707,7 +664,7 @@
     });
   } else {
     var swiper = new Swiper('.mySwiper', {
-      slidesPerView: 6,
+      slidesPerView: 3,
       spaceBetween: 20,
       navigation: {
         nextEl: '.swiper-button-next',

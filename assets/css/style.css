@@ -80,7 +80,7 @@ nav .nav-mid li .active {
   object-fit: contain;
 }
 
-#bene .card {
+#bene .card-img-top {
   -webkit-transition: 0.3s;
 }
 
@@ -168,7 +168,7 @@ nav .nav-mid li .active {
 #logo .swiper-slide img {
   display: block;
   width: 100%;
-  height: 70px;
+  height: 50px;
   object-fit: contain;
   aspect-ratio: 3/2;
 }
