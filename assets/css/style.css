@@ -26,11 +26,11 @@ nav a i {
   color: var(--var-primary);
 }
 
-nav .nav-link {
+nav .nav-mid .nav-link {
   color: var(--var-second);
 }
 
-nav li .active {
+nav .nav-mid li .active {
   color: var(--var-primary) !important;
   border-bottom: 4px solid var(--var-primary);
 }
