@@ -188,6 +188,15 @@ nav .nav-mid li .active {
   border-radius: 10px;
 }
 
+/* Bus */
+#bus,
+#bus-2 {
+  background-image: url('../image/BG.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
 @media only screen and (max-width: 1000px) {
   nav .btn-nav {
     font-size: 13.5px;
@@ -201,14 +210,9 @@ nav .nav-mid li .active {
     padding: 0 !important;
   }
 
-
   #hero .container-fluid {
     background:
-        /* top, transparent black, faked with gradient */ linear-gradient(
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
-      ),
-      /* bottom, image */ url('../image/hero.png');
+        /* top, transparent black, faked with gradient */ linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* bottom, image */ url('../image/hero.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -264,4 +268,3 @@ nav .nav-mid li .active {
     padding-right: 10px !important;
   }
 }
-
