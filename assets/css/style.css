@@ -127,8 +127,9 @@ nav li .active {
 /* Hadiah */
 #hadiah {
   background-image: url('../image/bg-price.png');
-  background-size: contain;
+  background-size: 100% 730px;
   background-position: center;
+  object-fit: cover;
   background-repeat: no-repeat;
 }
 
@@ -161,9 +162,9 @@ nav li .active {
     padding: 0 !important;
   }
 
-  #hero .text {
+  /* #hero .text {
     font-size: 70px;
-  }
+  } */
 
   #hero .container-fluid {
     background:
