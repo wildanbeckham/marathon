@@ -18,6 +18,10 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- Link Swiper's CSS -->
+    <link
+    rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -469,6 +473,33 @@
 </section>
 <!-- Hadiah Akhir -->
 
+<!-- Logo -->
+<section id="logo" class="py-5">
+  <div class="container-fluid py-5">
+    <div class="row">
+      <div class="col">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./assets/image/01log.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/image/02log.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/image/03log.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/image/04log.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/image/05log.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/image/06log.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/image/01log.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/image/02log.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/image/03log.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/image/04log.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/image/05log.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/image/06log.png" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Logo Akhir -->
+
 <!-- Footer -->
 <footer id="footer" class="mt-5">
   <div class="container py-5">
@@ -631,11 +662,47 @@
 <!-- JQuery -->
 <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
 <!-- Bootstrap 5 -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 <!-- My Script -->
 <script src="./assets/js/script.js"></script>
+
+<script>
+  function myFunction(x) {
+  if (x.matches) {
+      var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      keyboard: true,
+    });
+  } else {
+    var swiper = new Swiper('.mySwiper', {
+      slidesPerView: 10,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        clickable: true,
+      },
+      keyboard: true,
+    });
+  }
+}
+
+var x = window.matchMedia('(max-width: 750px)');
+myFunction(x); // Call listener function at run time
+x.addListener(myFunction); // Attach listener function on state changes
+</script>
 
 <!-- <script>
 $(document).ready(function(){
