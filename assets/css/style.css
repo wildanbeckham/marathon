@@ -179,6 +179,15 @@ nav .nav-mid li .active {
   background-position: center;
 }
 
+/* Parkir */
+#parkir-2 .container,
+#parkir {
+  background-image: url('../image/bg07.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
 @media only screen and (max-width: 1000px) {
   nav .btn-nav {
     font-size: 13.5px;
@@ -192,9 +201,6 @@ nav .nav-mid li .active {
     padding: 0 !important;
   }
 
-  /* #hero .text {
-    font-size: 70px;
-  } */
 
   #hero .container-fluid {
     background:
@@ -250,6 +256,12 @@ nav .nav-mid li .active {
     background-size: cover;
     background-image: url('../image/bg07.png');
     padding: 0;
+  }
+
+  #parkir-2 .container,
+  #parkir .container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 }
 
