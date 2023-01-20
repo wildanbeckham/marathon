@@ -127,7 +127,7 @@ nav .nav-mid li .active {
 /* Hadiah */
 #hadiah {
   background-image: url('../image/bg-price.png');
-  background-size: 100% 730px;
+  background-size: contain;
   background-position: center;
   object-fit: cover;
   background-repeat: no-repeat;
