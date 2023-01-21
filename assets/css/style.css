@@ -173,6 +173,12 @@ nav .nav-mid li .active {
   aspect-ratio: 3/2;
 }
 
+#logo-mobile img {
+  height: 50px;
+  object-fit: contain;
+  aspect-ratio: 3/2;
+}
+
 /* Footer */
 #footer {
   background-image: url('../image/bg07.png');
@@ -211,8 +217,7 @@ nav .nav-mid li .active {
   }
 
   #hero .container-fluid {
-    background:
-        /* top, transparent black, faked with gradient */ linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* bottom, image */ url('../image/hero.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* bottom, image */ url('../image/hero.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -270,5 +275,13 @@ nav .nav-mid li .active {
 
   #nav-bot {
     display: block !important;
+  }
+
+  #logo-mobile {
+    display: block !important;
+  }
+
+  #logo-desk {
+    display: none;
   }
 }

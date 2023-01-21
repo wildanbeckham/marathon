@@ -553,7 +553,7 @@
 
     <!-- Logo -->
     <section style="overflow: hidden" id="logo" class="py-5">
-      <div class="container-fluid py-5">
+      <div class="container-fluid py-5" id="logo-desk">
         <div class="row justify-content-center">
           <div class="col-lg-12 pb-3">
             <h4 class="fw-600 text-center pb-5 primary-text">DISELENGGARAKAN OLEH :</h4>
@@ -567,6 +567,32 @@
                 <div class="swiper-slide"><img src="./assets/image/logo/Pandara Sports.png" class="img-fluid" alt="" /></div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-none" id="logo-mobile">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <h4 class="fw-600 text-center pb-5 primary-text">DISELENGGARAKAN OLEH :</h4>
+          </div>
+          <div class="col-3 text-center">
+            <img src="./assets/image/logo/Mangkunegaran.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-3 text-center">
+            <img src="./assets/image/logo/DNC.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-3 text-center">
+            <img src="./assets/image/logo/KTD_corporate_FC.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-3 text-center">
+            <img src="./assets/image/logo/Pandara Sports.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-3 text-center">
+            <img src="./assets/image/logo/Gunung Sewu.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-3 text-center">
+            <img src="./assets/image/logo/Iso Plus.png" class="img-fluid" alt="" />
           </div>
         </div>
       </div>
@@ -755,51 +781,14 @@
       keyboard: true,
     });
 
-    function myFunction(x) {
-      if (x.matches) {
-        var swiper = new Swiper('.mySwiper', {
-          slidesPerView: 4,
-          spaceBetween: 20,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          keyboard: true,
-        });
-      } else {
-        var swiper = new Swiper('.mySwiper', {
-          slidesPerView: 4,
-          spaceBetween: 20,
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-          pagination: {
-            clickable: true,
-          },
-          keyboard: true,
-        });
-      }
-    }
-
-    var x = window.matchMedia('(max-width: 750px)');
-    myFunction(x); // Call listener function at run time
-    x.addListener(myFunction); // Attach listener function on state changes
+    var swiper = new Swiper('.mySwiper', {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      keyboard: true,
+    });
   </script>
-
-  <!-- <script>
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 100, function(){
-        window.location.hash = hash;
-      });
-    } 
-  });
-});
-</script> -->
 </html>
