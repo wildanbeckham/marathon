@@ -566,8 +566,6 @@
                 <div class="swiper-slide"><img src="./assets/image/logo/KTD_corporate_FC.png" class="img-fluid" alt="" /></div>
                 <div class="swiper-slide"><img src="./assets/image/logo/Pandara Sports.png" class="img-fluid" alt="" /></div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
             </div>
           </div>
         </div>
@@ -618,18 +616,32 @@
     </footer>
     <!-- Footer Akhir -->
 
-    <!-- Nav Bot -->
-    <nav id="nav-bot" class="d-none navbar navbar-expand border-bottom sticky-bottom">
+    <!-- Nav Bot Bulet -->
+    <nav id="nav-bot" class="d-none navbar navbar-expand border-bottom fixed-bottom">
       <div class="container-fluid px-3 pb-5">
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="https://regnowonline.com/race/login/7" target="_blank"><i class="p-4 shadow-lg rounded-circle h2 bi bi-pencil-square bg-danger text-white"></i></a>
+              <a class="nav-link" href="https://regnowonline.com/race/login/7" target="_blank"><i class="p-4 h3 rounded-circle text-white bg-danger bi bi-pencil-square"></i></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <!-- Nav Bot Akhir -->
+
+    <!-- Nav Bot Button -->
+    <!-- <nav id="nav-bot" class="d-none navbar navbar-expand border-bottom fixed-bottom">
+      <div class="container-fluid px-3 pb-5">
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link rounded-pill btn btn-danger text-white px-3 py-2" href="https://regnowonline.com/race/login/7" target="_blank">REGISTER NOW</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
     <!-- Nav Bot Akhir -->
 
     <!-- Modal -->
@@ -746,7 +758,7 @@
     function myFunction(x) {
       if (x.matches) {
         var swiper = new Swiper('.mySwiper', {
-          slidesPerView: 3,
+          slidesPerView: 4,
           spaceBetween: 20,
           pagination: {
             el: '.swiper-pagination',
@@ -756,7 +768,7 @@
         });
       } else {
         var swiper = new Swiper('.mySwiper', {
-          slidesPerView: 5,
+          slidesPerView: 4,
           spaceBetween: 20,
           navigation: {
             nextEl: '.swiper-button-next',
