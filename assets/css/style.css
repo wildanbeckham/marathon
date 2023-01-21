@@ -267,4 +267,8 @@ nav .nav-mid li .active {
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
+
+  #nav-bot {
+    display: block !important;
+  }
 }
