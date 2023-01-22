@@ -46,6 +46,7 @@ nav .nav-mid li .active {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  border-radius: 40% 0 0 0;
 }
 
 #hero .text {
@@ -174,7 +175,7 @@ nav .nav-mid li .active {
 }
 
 #logo-mobile img {
-  height: 50px;
+  height: 90px;
   object-fit: contain;
   aspect-ratio: 3/2;
 }
@@ -221,6 +222,13 @@ nav .nav-mid li .active {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 0;
+  }
+
+  #hero .absolute-img {
+    left: 43%;
+    top: 40px;
+    right: 50%;
   }
 
   #hero .cont-text {
