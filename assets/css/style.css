@@ -22,6 +22,12 @@ body {
 }
 
 /* Navbar */
+#nav-t {
+  background-image: url('../image/revisi/bg.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
 nav a i {
   color: var(--var-primary);
 }
@@ -78,7 +84,7 @@ nav .nav-mid li .active {
 
 /* Benefit */
 #bene {
-  background-image: url('../image/revisi/MANGKU-Section-3.jpg');
+  background-image: url('../image/revisi/bg.jpeg');
   background-position: center;
   background-size: cover;
 }
@@ -99,13 +105,17 @@ nav .nav-mid li .active {
 
 /* Jadwal */
 #jadwal {
-  background-image: url('../image/BG.png');
+  background-image: url('../image/revisi/bg.jpeg');
+  background-position: center;
+  background-size: cover;
   color: var(--var-second);
 }
 
 /* Rute */
 #rute {
-  background-image: url('../image/BG.png');
+  background-image: url('../image/revisi/bg.jpeg');
+  background-position: center;
+  background-size: cover;
 }
 
 #rute .rute-img {
@@ -129,13 +139,15 @@ nav .nav-mid li .active {
 
 /* Jersey */
 #jersey {
-  background-image: url('../image/BG.png');
+  background-image: url('../image/revisi/bg.jpeg');
+  background-position: center;
+  background-size: cover;
 }
 
 /* Hadiah */
 #hadiah {
-  background-image: url('../image/bg-price.png');
-  background-size: contain;
+  background-image: url('../image/revisi/bg07.png');
+  background-size: cover;
   background-position: center;
   object-fit: cover;
   background-repeat: no-repeat;
@@ -152,6 +164,12 @@ nav .nav-mid li .active {
 }
 
 /* Logo */
+#logo {
+  background-image: url('../image/revisi/bg.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
 #logo .swiper {
   width: 100%;
   height: 100%;
@@ -189,26 +207,45 @@ nav .nav-mid li .active {
 
 /* Footer */
 #footer {
-  background-image: url('../image/bg07.png');
-  background-position: center;
+  background-image: url('../image/revisi/bg.jpeg');
+  background-position: top;
+  background-size: cover;
 }
 
 /* Parkir */
-#parkir-2 .container,
+#parkir-2 .container {
+  background-image: url('../image/bg07.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
 #parkir {
   background-image: url('../image/bg07.png');
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
+}
+
+#parkir-2 {
+  background-image: url('../image/revisi/bg.jpeg');
+  background-position: center;
+  background-size: cover;
 }
 
 /* Bus */
-#bus,
-#bus-2 {
+#bus-2,
+#bus-3 {
   background-image: url('../image/BG.png');
   background-size: cover;
   background-position: center;
   border-radius: 10px;
+}
+
+#bus,
+#bus-4 {
+  background-image: url('../image/revisi/SHUTTLE/Part/MANGKU-RACE-DAY-SHUTTLE_01.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 @media only screen and (max-width: 1000px) {
