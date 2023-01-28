@@ -40,13 +40,12 @@ nav .nav-mid li .active {
 }
 
 /* Hero */
-#hero .container-fluid {
-  background-image: url('../image/hero.png');
-  background-size: contain;
+#hero {
+  background-image: url('../image/revisi/Banner-MANGKU-Section.jpg');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  border-radius: 40% 0 0 0;
 }
 
 #hero .text {
@@ -57,7 +56,9 @@ nav .nav-mid li .active {
 
 /* Misi */
 #misi {
-  background-image: url('../image/BG.png');
+  background-image: url('../image/revisi/BG.png');
+  background-position: center;
+  background-size: cover;
   color: var(--var-second);
 }
 
@@ -76,6 +77,12 @@ nav .nav-mid li .active {
 }
 
 /* Benefit */
+#bene {
+  background-image: url('../image/revisi/MANGKU-Section-3.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
 #bene img {
   aspect-ratio: 1/1;
   object-fit: contain;
@@ -214,15 +221,16 @@ nav .nav-mid li .active {
   }
 
   #hero {
-    padding: 0 !important;
+    padding: 0 0 100px 0 !important;
   }
 
-  #hero .container-fluid {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* bottom, image */ url('../image/hero.png');
+  #hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* bottom, image */ url('../image/revisi/Banner-MANGKU-Section.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 0;
+    height: 100%;
   }
 
   #hero .absolute-img {
